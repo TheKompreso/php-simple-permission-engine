@@ -22,7 +22,7 @@ You can add a "rights" field to your user management system. (example)
 
 When granting rights to a user, it is worth specifying the amount of rights. (example: user_rights = gen_moder+moder+helper)
 
-# Funtions
+# Functions
 After turning on the include, you can immediately call any of the listed functions.
 
 Function: **StrictRightsCheck**
