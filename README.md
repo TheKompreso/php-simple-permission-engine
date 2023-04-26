@@ -26,25 +26,25 @@ When granting rights to a user, it is worth specifying the amount of rights. (ex
 After turning on the include, you can immediately call any of the listed functions.
 
 Function: **StrictRightsCheck**
-```
+```php
 SimpleRightsEngine::StrictRightsCheck($userrights, $requiredrights)
 ```
 >Checks $userrights for an exact match of $requiredrights
 
 Function: **CheckOneOfRights**
-```
+```php
 SimpleRightsEngine::CheckOneOfRights($userrights, $requiredrights)
 ```
 >Checks if $userrights matches at least one bit of $requiredrights
 
 # Examples
 **Granting rights to a user**
-```
+```php
 $user_rights += SRE_Rights::contentmaker;
 ```
-```
+```php
 $user_rights = SRE_Rights::helper + SRE_Rights::moder + SRE_Rights::gen_moder + SRE_Rights::tester;
 ```
-```
+```php
 if(SimpleRightsEngine::CheckOneOfRights($user_rights, SRE_Rights::admin + SRE_Rights::gen_admin)){}
 ```
