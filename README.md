@@ -37,6 +37,18 @@ SimpleRightsEngine::CheckOneOfRights($userrights, $requiredrights)
 ```
 >Checks if $userrights matches at least one bit of $requiredrights
 
+Function: **AddRights**
+```php
+SimpleRightsEngine::AddRights($userrights, $addedrights)
+```
+>Adds new rights to $userrights $addedrights
+
+Function: **RemoveRights**
+```php
+SimpleRightsEngine::RemoveRights($userrights, $removedrights)
+```
+>Removes all $removedrights rights from $userrights
+
 # Examples
 **Granting rights to a user**
 ```php
