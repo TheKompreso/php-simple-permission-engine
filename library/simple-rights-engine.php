@@ -9,6 +9,14 @@
         {
             return ($requiredrights == 0 || ($userrights & $requiredrights) != 0);
         }
+        public static function AddRights($userrights, $rights)
+        {
+            return ($userrights | $rights);
+        }
+        public static function RemoveRights($userrights, $rights)
+        {
+            return ($userrights&(~$rights));
+        }
     }
     abstract class SRE_Rights
     {
