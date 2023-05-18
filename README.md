@@ -29,13 +29,13 @@ Function: **StrictRightsCheck**
 ```php
 SimpleRightsEngine::StrictRightsCheck($userrights, $requiredrights)
 ```
->Checks $userrights for an exact match of $requiredrights
+>Checks $userrights for an exact match of $requiredrights<br>**return**: returns true or false.
 
 Function: **CheckOneOfRights**
 ```php
 SimpleRightsEngine::CheckOneOfRights($userrights, $requiredrights)
 ```
->Checks if $userrights matches at least one bit of $requiredrights
+>Checks if $userrights matches at least one bit of $requiredrights<br>**return**: returns true or false.
 
 Function: **AddRights**
 ```php
