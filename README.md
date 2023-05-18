@@ -41,13 +41,13 @@ Function: **AddRights**
 ```php
 SimpleRightsEngine::AddRights($userrights, $addedrights)
 ```
->Adds new rights to $userrights $addedrights
+>Adds new rights to $userrights $addedrights<br>**return**: the new permissions value to be written.
 
 Function: **RemoveRights**
 ```php
 SimpleRightsEngine::RemoveRights($userrights, $removedrights)
 ```
->Removes all $removedrights rights from $userrights
+>Removes all $removedrights rights from $userrights<br>**return**: the new permissions value to be written.
 
 # Examples
 **Granting rights to a user**
